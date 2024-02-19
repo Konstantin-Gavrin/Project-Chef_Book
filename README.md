@@ -4,9 +4,18 @@
 
 **Команда:** Konstantin Gavrin, Mark Mensikov.
 
-**Языки програмирования:** Java, SpringBoot
-**Используемые технологии** CSS, HTML
+**Языки програмирования:** Java
+**Используемые технологии** CSS, HTML,  SpringBoot
+
+# Функциональные требования
+- Поиск рецептов
+- Просмотр рецептов
+- Добавление рецептов
+- Оценка и отзывы
+# Не функциональные требования
+- Безопасность
+- Удобство использования
 
 **Модель данных**
 
-![image (3)](https://github.com/Konstantin-Gavrin/Project-Chef_Book/assets/131643290/22987b8d-abd4-4f79-bbb3-2e97e6785d78)
+![image (4)](https://github.com/Konstantin-Gavrin/Project-Chef_Book/assets/131643290/9e997e2e-95c9-4347-ae10-392092ed2f96)
