@@ -9,5 +9,4 @@
 
 **Модель данных**
 
-
-![image (2)](https://github.com/Konstantin-Gavrin/Project-Chef_Book/assets/131643290/d536683c-6b6c-43ea-be43-6610a7e332a1)
+![image (3)](https://github.com/Konstantin-Gavrin/Project-Chef_Book/assets/131643290/22987b8d-abd4-4f79-bbb3-2e97e6785d78)
