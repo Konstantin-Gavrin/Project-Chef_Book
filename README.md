@@ -5,6 +5,7 @@
 **Команда:** Konstantin Gavrin, Mark Mensikov.
 
 **Языки програмирования:** Java
+
 **Используемые технологии** CSS, HTML,  SpringBoot
 
 ## Функциональные требования
