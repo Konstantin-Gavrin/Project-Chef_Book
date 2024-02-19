@@ -5,8 +5,9 @@
 **Команда:** Konstantin Gavrin, Mark Mensikov.
 
 **Языки програмирования:** Java, SpringBoot
-**Используемые инструменты** CSS, HTML
+**Используемые технологии** CSS, HTML
 
 **Модель данных**
 
-![image (1)](https://github.com/Konstantin-Gavrin/Project-Chef_Book/assets/131643290/72ad5c11-87ee-45cc-a6a7-b32304910cb4)
+
+![image (2)](https://github.com/Konstantin-Gavrin/Project-Chef_Book/assets/131643290/d536683c-6b6c-43ea-be43-6610a7e332a1)
