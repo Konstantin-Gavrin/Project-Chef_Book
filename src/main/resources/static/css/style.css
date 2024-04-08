@@ -1,0 +1,87 @@
+body {
+    background-image: url(background.jpg);
+}
+
+.wrapper {
+    width: 1388px;
+    margin: 0px auto;
+}
+
+section {
+    border: solid 4px #f0b434;
+    width: 1000px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow:0 0 30px #f0b434;
+    background-color: #ffedcb;
+}
+
+.description {
+    width: 800px;
+    margin: auto;
+    text-align: justify;
+    font-family: arial;
+    font-size: 20px;
+    margin-bottom: 100px;
+    background-color: #FFDE9F;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+h1 {
+    font-family: arial;
+    color: darkorange;
+    font-size: 50px;
+    box-shadow:0 0 30px orange;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    background-color: #ffedcb;
+}
+
+h2 {
+	margin-left: 16px;
+	margin-bottom: 16px;
+	font-family: arial;
+    font-size: 28px;
+}
+
+.card-text {
+	margin-left: 30px;
+	margin-bottom: 16px;
+	font-size: 1.4em;
+	font-family: arial;
+}
+
+.card-information {
+    margin-left: 30px;
+	margin-bottom: 16px;
+	font-size: 1.1em;
+	font-family: arial;
+}
+
+h3 {
+    margin-left: 16px;
+	margin-bottom: 16px;
+	font-family: arial;
+    font-size: 23px;
+}
+
+ul {
+	margin-bottom: 16px;
+	font-size: 1.1em;
+	font-family: arial;
+}
+
+
+.card-instruction {
+    width: 650px;
+    margin-left: 30px;
+	margin-bottom: 160px;
+	font-size: 1em;
+	font-family: arial;
+}

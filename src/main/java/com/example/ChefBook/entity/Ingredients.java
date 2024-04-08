@@ -6,7 +6,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.List;
 import java.util.Set;
 
 @Getter
@@ -21,8 +20,8 @@ public class Ingredients {
     private Long id;
 
     @Column(nullable = false, length = 1000)
-    private String ingredient_name;
+    private String ingredientName;
 
     @OneToMany(mappedBy = "ingredients")
-    Set<Recipe_Ingredients> recipe_Ingredients;
+    Set<RecipeIngredients> recipeIngredients;
 }

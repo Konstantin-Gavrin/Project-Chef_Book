@@ -6,15 +6,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Set;
-
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
 @Table(name="recipe_Ingredients")
-public class Recipe_Ingredients {
+public class RecipeIngredients {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

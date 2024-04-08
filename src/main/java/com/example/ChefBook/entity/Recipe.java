@@ -8,9 +8,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.Date;
-import java.util.List;
 import java.util.Set;
 
 @Getter
@@ -34,22 +31,22 @@ public class Recipe {
     private String instructions;
 
     @Column(nullable = false, length = 10)
-    private int prep_time;
+    private int prepTime;
 
     @Column(nullable = false, length = 10)
-    private int cook_time;
+    private int cookTime;
 
     @Column(nullable = false, length = 10)
-    private int total_time;
+    private int totalTime;
 
     @Column(nullable = false, length = 10)
     private int servings;
 
     @Column(nullable = false, length = 8)
-    private LocalDate created_at;
+    private LocalDate createdAt;
 
     @Column(nullable = false, length = 8)
-    private LocalDate updated_at;
+    private LocalDate updatedAt;
 
     @Column(nullable = false, length = 100)
     private String categories;
@@ -63,5 +60,5 @@ public class Recipe {
 //    Recipe_Images recipe_Images;
 
     @OneToMany(mappedBy = "recipe")
-    Set<Recipe_Ingredients> recipe_Ingredients;
+    Set<RecipeIngredients> recipeIngredients;
 }

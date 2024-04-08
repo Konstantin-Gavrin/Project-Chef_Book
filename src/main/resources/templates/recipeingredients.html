@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <h1>Chef Book</h1>
+    <div class="description">
+        От простых рецептов на каждый день до утонченных гастрономических изысков - наш сайт предлагает широкий выбор блюд для любого вкуса и уровня мастерства. Изысканные рецепты с подробными инструкциями и красочными фотографиями ждут вас здесь. Добро пожаловать в мир вдохновения и кулинарных открытий!
+    </div>
+
+    <section>
+        <div class="card" th:each="recipeingredient, recipeIndex : ${recipeingredients}">
+            
+            <!-- Название блюда -->
+            <h2 th:if="${recipeIndex.index == 0 or recipeingredient.getRecipe().getTitle() != recipeingredients[recipeIndex.index - 1].getRecipe().getTitle()}"
+                th:text="${recipeingredient.getRecipe().getTitle()}"></h2>
+            
+            <!-- Описание блюда -->
+            <p th:if="${recipeIndex.index == 0 or recipeingredient.getRecipe().getDescription() != recipeingredients[recipeIndex.index - 1].getRecipe().getDescription()}"
+               th:text="${recipeingredient.getRecipe().getDescription()}", class="card-text"></p>
+            
+            <!-- Категория и время приготовления -->
+            <p th:if="${recipeIndex.index == 0 or recipeingredient.getRecipe().getTitle() != recipeingredients[recipeIndex.index - 1].getRecipe().getTitle()}", class="card-information">
+                <b>Категория</b> - <span th:text="${recipeingredient.getRecipe().getCategories()}"></span> <br>
+                <b>Полное время готовки</b> - <span th:text="${recipeingredient.getRecipe().getTotalTime()}"></span> Минут <br>
+                <b>Время приготовления блюда</b> - <span th:text="${recipeingredient.getRecipe().getCookTime()}"></span> Минут <br>
+                <b>Время подготовки</b> - <span th:text="${recipeingredient.getRecipe().getPrepTime()}"></span> Минут <br>
+                <b>Количество порций</b> - <span th:text="${recipeingredient.getRecipe().getServings()}"></span>
+            </p>
+            
+        <div class="ingredients-background">
+            <!-- Ингредиенты -->
+            <h3 th:if="${recipeIndex.index == 0 or recipeingredient.getRecipe().getTitle() != recipeingredients[recipeIndex.index - 1].getRecipe().getTitle()}">Ингредиенты</h3>
+            <ul>
+                <li><b><span th:text="${recipeingredient.getIngredients().getIngredientName()}"></span></b> -
+                <span th:text="${recipeingredient.getQuantity()}"></span>
+                <span th:text="${recipeingredient.getUnit()}"></span>
+                </li>
+            </ul>
+        </div>   
+            <!-- Инструкция приготовления -->
+            <p th:if="${recipeIndex.index == recipeingredients.size() - 1 or recipeingredient.getRecipe().getTitle() != recipeingredients[recipeIndex.index + 1].getRecipe().getTitle()}", class="card-instruction">
+                <b>Инструкция приготовления:</b>
+                <span th:text="${recipeingredient.getRecipe().getInstructions()}"></span>
+            </p>
+        </div>
+    </section>
+    </div>
+</body>
+</html>
