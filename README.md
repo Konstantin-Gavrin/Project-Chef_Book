@@ -1,6 +1,6 @@
 # Project-Chef_Book
 
-##Установка проекта
+## Установка проекта
 
 - Для установки проекта необходима сделать **Git Bash**, в командной строке написать **git clone https://github.com/Konstantin-Gavrin/Project-Chef_Book.git -b master**
 - В конкретном месте где вы делали перенос должна была появиться папка **Project-Chef_Book**, далее нужно открыть **XAMPP** и с папки  **Project-Chef_Book** нужно взять файл - **db_chefbook**, этот файл нужно импортировать в базу данных
