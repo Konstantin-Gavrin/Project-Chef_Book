@@ -19,6 +19,7 @@
 
 # Модель данных
 
-![image (4)](https://github.com/Konstantin-Gavrin/Project-Chef_Book/assets/131643290/9e997e2e-95c9-4347-ae10-392092ed2f96)
+![305884739-9e997e2e-95c9-4347-ae10-392092ed2f96](https://github.com/Konstantin-Gavrin/Project-Chef_Book/assets/131643290/7fd0a587-f0a8-4d1c-991a-03b1cba52c83)
+
 
 # Для инструкции скачивания перейдите на ветку master!
